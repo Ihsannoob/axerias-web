@@ -16,7 +16,7 @@ export default function Donate() {
 
         {/* Donate Button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="minecraft" size="xl" onClick={() => {window.location.href ="https://chat.whatsapp.com/KJGhyQZEIAeEn6CXQtR2w1";}}>
+          <Button variant="minecraft" size="xl" onClick={() => {window.location.href ="https://saweria.co/SynGit";}}>
             Donate
           </Button>
         </div>
