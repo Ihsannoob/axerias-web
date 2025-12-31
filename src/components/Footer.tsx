@@ -25,7 +25,11 @@ const Footer = () => {
             {["Discord", "WhatsApp"].map((social) => (
               <a
                 key={social}
-                href="https://discord.gg/R2QrNbEUD"
+                href={
+                  social==="Discord"
+                  ?"https://discord.gg/R2QrNbEUD"
+                  :social==="WhatsApp"
+                  ?"https://chat.whatsapp.com/KJGhyQZEIAeEn6CXQtR2w1"
                 className="font-body text-sm text-muted-foreground hover:text-minecraft-green transition-colors"
               >
                 {social}
