@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import exariasLogo from "@/assets/exarias-logo.jpg";
+import exariasLogo from "@/assets/exarias-logo.png";
 
 const HeroSection = () => {
   return (
