@@ -30,6 +30,7 @@ const Footer = () => {
                   ?"https://discord.gg/R2QrNbEUD"
                   :social==="WhatsApp"
                   ?"https://chat.whatsapp.com/KJGhyQZEIAeEn6CXQtR2w1"
+                  :"#"
                 }
                 className="font-body text-sm text-muted-foreground hover:text-minecraft-green transition-colors"
               >
