@@ -22,10 +22,10 @@ const Footer = () => {
 
           {/* Social links */}
           <div className="flex gap-6 mb-8">
-            {["Discord", "YouTube", "Instagram", "TikTok"].map((social) => (
+            {["Discord", "WhatsApp"].map((social) => (
               <a
                 key={social}
-                href="#"
+                href="https://discord.gg/R2QrNbEUD"
                 className="font-body text-sm text-muted-foreground hover:text-minecraft-green transition-colors"
               >
                 {social}
