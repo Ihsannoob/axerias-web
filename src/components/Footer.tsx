@@ -1,4 +1,4 @@
-import exariasLogo from "@/assets/exarias-logo.jpg";
+import exariasLogo from "@/assets/exarias-logo.png";
 
 const Footer = () => {
   return (
