@@ -12,7 +12,7 @@ const BackstorySection = ({ isPremium = false }: BackstorySectionProps) => {
 
   Bertahun-tahun kemudian, empat perusahaan terbesar di Academy City Exarias melihat potensi besar di lahan tersebut. Keempat perusahaan itu bekerja sama dengan satu tujuan: mengubah simbol kegagalan masa lalu menjadi pusat pembentukan generasi pemimpin masa depan.
 
-  Dengan teknologi mutakhir, renovasi besar-besaran dilakukan. Bangunan lama tidak dihancurkan sepenuhnya—sebagian struktur bawah tanah tetap dipertahankan dan disegel, karena dianggap terlalu berbahaya untuk dibuka kembali.`;
+  Dengan teknologi mutakhir, renovasi besar-besaran dilakukan. Bangunan lama tidak dihancurkan sepenuhnya—sebagian struktur bawah tanah tetap dipertahankan dan disegel, karena dianggap terlalu berbahaya untuk dibuka kembali.
   Akhirnya, berdirilah Sekolah Exarias, sekolah elite yang menggabungkan:
 • Pendidikan akademik tingkat tinggi
 • Pelatihan mental dan kepemimpinan
