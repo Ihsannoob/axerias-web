@@ -24,9 +24,9 @@ const Index = () => {
         <link rel="canonical" href="https://smp-exarias.com" />
       </Helmet>
 
-      <Navbar />
+    <Navbar />
       
-      <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background">
       <HeroSection />
       <FeaturesSection />
       <Backstory isPremium={isPremium} />
