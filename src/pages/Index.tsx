@@ -5,7 +5,8 @@ import JoinSection from "@/components/JoinSection";
 import Footer from "@/components/Footer"
 import Membership from "@/components/MembershipSection";
 import Payment from "@/components/PaymentSection";
-import Backstory from '@/components/BackstorySection";
+import Backstory from "@/components/BackstorySection";
+import Karakter from "@/components/SesiKarakter";
   
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <HeroSection />
       <FeaturesSection />
       <Backstory />
+      <Karakter />
       <JoinSection />
       <Membership />
       <Payment />
