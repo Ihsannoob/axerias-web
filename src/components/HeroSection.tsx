@@ -48,8 +48,8 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="default" size="xl" onClick={() => {window.location.href = "#join";}}>
-            Bergabung
+          <Button variant="default" size="xl" onClick={() => {window.location.href = "https://forms.gle/aRFeCMmkgi7tVZJx7";}}>
+            Daftar
           </Button>
           <Button variant="gold" size="lg" onClick={() => {window.location.href = "https://discord.gg/SV5epqAUb";}}>
             Discord
