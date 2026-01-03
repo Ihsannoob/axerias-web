@@ -16,8 +16,8 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <FeaturesSection />
-      <Backstory />
-      <Karakter />
+      <Backstory isPremium={isPremium} />
+      <Karakter isPremium={isPremium} />
       <JoinSection />
       <Membership />
       <Payment />
