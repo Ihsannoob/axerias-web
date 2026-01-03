@@ -23,48 +23,98 @@ const Navbar = () => {
             EXARIAS<span className="text-minecraft-gold"> SMP</span>
           </a>
 
-          {/* Desktop nav */}
+          {/*Desktop bar*/}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
               >
                 {link.label}
               </a>
             ))}
-            <Button variant="minecraft" size="sm">
-              Join Now
-            </Button>
+            
+            {user ? (
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-card/60 border border-border/50">
+                  {isPremium ? (
+                    <Crown className="w-4 h-4 text-secondary" />
+                  ) : (
+                    <User className="w-4 h-4 text-primary" />
+                  )}
+                  <span className="text-sm font-medium text-foreground">
+                    {profile?.username || user.email?.split("@")[0]}
+                  </span>
+                  {isPremium && (
+                    <span className="px-2 py-0.5 text-xs bg-secondary/20 text-secondary rounded-full font-bold">
+                      PREMIUM
+                    </span>
+                  )}
+                </div>
+                <Button variant="ghost" size="icon" onClick={handleSignOut}>
+                  <LogOut className="w-4 h-4" />
+                </Button>
+              </div>
+            ) : (
+              <Button variant="default" size="sm" asChild>
+                <Link to="/auth">Masuk</Link>
+              </Button>
+            )}
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile bar */}
           <button
-            className="md:hidden text-foreground"
-            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 text-foreground"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
-        {/* Mobile nav */}
-        {isOpen && (
-          <div className="md:hidden py-4 border-t border-border/50">
-            <div className="flex flex-col gap-4">
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t border-border/50 pt-4">
+            <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-muted-foreground hover:text-primary transition-colors py-2"
                 >
                   {link.label}
                 </a>
               ))}
-              <Button variant="minecraft" size="sm" className="w-fit"onClick={() => {window.location.href = "https://chat.whatsapp.com/KJGhyQZEIAeEn6CXQtR2w1";}}>
-                Join Now
-              </Button>
+              
+              {user ? (
+                <>
+                  <div className="flex items-center gap-2 py-2 text-foreground">
+                    {isPremium ? (
+                      <Crown className="w-4 h-4 text-secondary" />
+                    ) : (
+                      <User className="w-4 h-4 text-primary" />
+                    )}
+                    <span>{profile?.username || user.email?.split("@")[0]}</span>
+                    {isPremium && (
+                      <span className="px-2 py-0.5 text-xs bg-secondary/20 text-secondary rounded-full font-bold">
+                        PREMIUM
+                      </span>
+                    )}
+                  </div>
+                  <Button variant="outline" size="sm" onClick={handleSignOut}>
+                    <LogOut className="w-4 h-4 mr-2" />
+                    Keluar
+                  </Button>
+                </>
+              ) : (
+                <Button variant="default" size="sm" className="mt-2" asChild>
+                  <Link to="/auth" onClick={() => setIsMobileMenuOpen(false)}>
+                    Masuk
+                  </Link>
+                </Button>
+              )}
             </div>
           </div>
         )}
