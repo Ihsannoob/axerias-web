@@ -6,7 +6,7 @@ interface BackstorySectionProps {
 }
 
 const BackstorySection = ({ isPremium = false }: BackstorySectionProps) => {
-  const backstoryContent = `Sekolah Exarias berdiri megah di tengah kota Academy City Exarias sebagai simbol kemajuan pendidikan modern. Namun, tidak banyak yang tahu bahwa sebelum menjadi sekolah elit seperti sekarang, tempat ini menyimpan masa lalu yang kelam.
+  const backstoryContent = `Sekolah Exarias berdiri megah di tengah kota Academy City Exarias sebagai simbol kemajuan pendidikan modern. Namun, tidak banyak yang tahu bahwa sebelum menjadi sekolah elit seperti sekarang, tempat ini menyimpan masa lalu yang kelam.';
 
   const hiddenContent = `Dahulunya, lokasi Sekolah Exarias adalah kompleks penelitian tertutup sekaligus fasilitas pelatihan rahasia milik pemerintah lama. Tempat ini digunakan untuk menguji eksperimen teknologi, psikologi manusia, dan simulasi kepemimpinan. Banyak proyek gagal, dan lokasi itu akhirnya ditinggalkan setelah dianggap berbahaya serta tidak layak digunakan.
 
