@@ -5,7 +5,7 @@ interface SesikarakterProps {
   isPremium?: boolean;
 }
 
-const SesiKarakter = ({ isPremium = false }: CharactersSectionProps) => {
+const SesiKarakter = ({ isPremium = false }: SesiKarakterProps) => {
   const characters = [
     {
       name: "Kepala Sekolah",
