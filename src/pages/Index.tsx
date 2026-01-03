@@ -12,8 +12,10 @@ import { useAuth } from "@/hooks/useAuth";
 const Index = () => {
   const { isPremium } = useAuth();
   return (
-    <div className="min-h-screen bg-background" id="home">
-      <Navbar />
+   <>
+    <Navbar />
+
+    <main className="min-h-screen bg-background">
       <HeroSection />
       <FeaturesSection />
       <Backstory isPremium={isPremium} />
@@ -22,7 +24,8 @@ const Index = () => {
       <Membership />
       <Payment />
       <Footer />
-    </div>
+    </main>
+   </>
   );
 };
 
