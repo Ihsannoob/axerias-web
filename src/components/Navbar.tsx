@@ -7,11 +7,12 @@ const Navbar = () => {
 
   const navLinks = [
     { label: "Home", href: "#home" },
-    { label: "Cerita", href: "#story" },
+    {label: "backstory", href: "#backstory" },
+    { label: "karakter", href: "#characters" },
     { label: "Fitur", href: "#features" },
-    { label: "Gallery", href: "#gallery" },
     { label: "Bergabung", href: "#join" },
-    { label: "Donasi", href: "#Donate" },
+    { label: "membership", href: "#membership" },
+    { label: "payment", href:"#payment" },
   ];
 
   return (
