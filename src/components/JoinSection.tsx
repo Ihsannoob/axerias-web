@@ -5,7 +5,7 @@ import { toast } from "sonner";
 
 const JoinSection = () => {
   const [copied, setCopied] = useState(false);
-  const serverIP = "play.exarias-smp.com";
+  const serverIP = "play.exarias.my.id";
 
   const copyIP = () => {
     navigator.clipboard.writeText(serverIP);
