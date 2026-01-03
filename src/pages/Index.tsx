@@ -7,8 +7,10 @@ import Membership from "@/components/MembershipSection";
 import Payment from "@/components/PaymentSection";
 import Backstory from "@/components/BackstorySection";
 import Karakter from "@/components/SesiKarakter";
+import { useAuth } from "@/hooks/useAuth";
   
 const Index = () => {
+  const { isPremium } = useAuth();
   return (
     <div className="min-h-screen bg-background" id="home">
       <Navbar />
