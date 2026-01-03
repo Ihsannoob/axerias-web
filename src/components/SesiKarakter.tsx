@@ -1,11 +1,11 @@
 import { Lock, Users, Shield, BookOpen, Wrench, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-interface CharactersSectionProps {
+interface SesikarakterProps {
   isPremium?: boolean;
 }
 
-const CharactersSection = ({ isPremium = false }: CharactersSectionProps) => {
+const SesiKarakter = ({ isPremium = false }: CharactersSectionProps) => {
   const characters = [
     {
       name: "Kepala Sekolah",
