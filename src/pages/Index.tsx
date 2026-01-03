@@ -5,7 +5,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import JoinSection from "@/components/JoinSection";
 import Footer from "@/components/Footer";
 import Donate from "@/components/Donate";
-import Membership from "@/components/";
+import Membership from "@/components/MembershipSection";
   
 const Index = () => {
   return (
